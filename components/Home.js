@@ -52,7 +52,7 @@ function Home() {
       .then((response) => response.json())
       .then((data) => {
         const newMoviesData = [];
-        data.results.map((singleMovie) => {
+        data.movies.map((singleMovie) => {
           const newMovie = {};
           newMovie.title = singleMovie.title;
           newMovie.poster = singleMovie.poster_path;
